@@ -26,7 +26,7 @@ This lifecycle is based on a flavour of Trunk Based Development called "Scaled T
 
 ## Releasing a new version
 
-[IMAGE]
+![normal-development](https://user-images.githubusercontent.com/835629/119111937-77b27700-ba1b-11eb-84ab-0d21fb9bcc22.png)
 
 The release process should also be automated based on a fixed trigger, for example creating a "Release" in Github.
 
@@ -42,7 +42,7 @@ The process is identical to the usual development flow outlined above with the `
 
 ### Releasing the hotfix
 
-[IMAGE]
+![hotfixes-to-a-release](https://user-images.githubusercontent.com/835629/119111970-80a34880-ba1b-11eb-90cf-f9d20b3f58a0.png)
 
 Once the fix has been merged it can be release in isolation.
 
