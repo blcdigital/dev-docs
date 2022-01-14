@@ -8,17 +8,17 @@ The topics here have a material impact on our customers, other developers, and t
 
 The system should be designed and built with an acceptable of performance as a minimum.
 
-This should take in to account things like latency, load, and resource utilisation. Performance can be negatively affected by a number of factors so it should be clear as to what is being measured. These requirements should also evolve as the system does - new features can easily change where the highest load and resource consumption occurs.
+This should take in to account things like latency, load, and resource utilization. Performance can be negatively affected by a number of factors so it should be clear as to what is being measured. These requirements should also evolve as the system does - new features can easily change where the highest load and resource consumption occurs.
 
 ## Availability
 
-Sometimes referred to as "uptime", we must ensure the system is available for use as much as possible. Generaaly expressed as a percentage it should also take in to account the Maintainability of the system.
+Sometimes referred to as "uptime", we must ensure the system is available for use as much as possible. Generally expressed as a percentage it should also take in to account the Maintainability of the system.
 
 ## Maintainability
 
 This defines the time required for the system or one of its components to be fixed due to failure or updated during the normal course of development. For example, if you have 75 percent maintainability for 24 hours, this means that there’s a 75 percent chance the component can be fixed in 24 hours.
 
-For regular releases we should aim for zero downtime deployments and the ability to rollback versions should we encouter issues during this process.
+For regular releases we should aim for zero downtime deployments and the ability to rollback versions should we encounter issues during this process.
 
 ## Security
 

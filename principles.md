@@ -14,7 +14,7 @@ It's important to pick the right battles, not everything needs to be a point of 
 
 Code itself is unimportant: it's a means to an end. We need to be able to understand the business cost and value of the work we produce.
 
-## Expect and accomodate change
+## Expect and accommodate change
 
 Everything is subject to change and we should be ready for that. Whether it is a change in scope for a feature or an existing piece of functionality you spent a decent amount of time on, change is inevitable and we need to be OK with that.
 
@@ -22,7 +22,7 @@ Everything is subject to change and we should be ready for that. Whether it is a
 
 Simpler code is usually faster and cheaper to implement and it is less likely to fail or break in unexpected ways.
 
-More importantly it is easier for other developers to understand which reduces the cogniative overhead when working at scale, making it easier for other developers to reason about, maintain, debug, and iterate on.
+More importantly it is easier for other developers to understand which reduces the cognitive overhead when working at scale, making it easier for other developers to reason about, maintain, debug, and iterate on.
 
 ## Reduce the number of moving parts
 

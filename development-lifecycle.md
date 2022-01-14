@@ -3,11 +3,11 @@
 ## Goals
 
 - **To be able to cut a release from `main` whenever we want.** We want to have the confidence in our work and in our process that a release can be made at any time.
-- **Automate all the things 🤖.** By leveraging automations in code quality checks, E2E, and regression testing (both visual and functional) we can take the pressure of QA teams and release faster and with more confidence.
+- **Automate all the things 🤖.** By leveraging automation for code quality checks, E2E, and regression testing (both visual and functional) we can take the pressure of QA teams and release faster and with more confidence.
 
 ## Development
 
-This lifecycle is based on a flavour of Trunk Based Development called "Scaled Trunk Based Development". The key difference is developers use short-lived feature branches in a similar fashion to GitFlow instead of merging their code directly into the trunk.
+This lifecycle is based on a flavour of Trunk Based Development[1] called "Scaled Trunk Based Development". The key difference is developers use short-lived feature branches in a similar fashion to GitFlow[2] instead of merging their code directly into the trunk.
 
 ### Workflow
 
@@ -22,7 +22,7 @@ This lifecycle is based on a flavour of Trunk Based Development called "Scaled T
 1. Merge into `main`
     - Before merging the branch should pass all of the automated tests and have at least one approval. If more than one developer has left comments then these should also be addressed and approved before merging;
     - The source branch should be up to date with the target branch;
-    - The recommended merging strategy is "Squash and merge". We care about the task in its entirity but we should ne be concerned about the individual steps taken at this stage;
+    - The recommended merging strategy is "Squash and merge". We care about the task in its entirety but we should ne be concerned about the individual steps taken at this stage;
 
 ## Releasing a new version
 
@@ -30,9 +30,9 @@ This lifecycle is based on a flavour of Trunk Based Development called "Scaled T
 
 The release process should also be automated based on a fixed trigger, for example creating a "Release" in Github.
 
-Release notes detailing everything included in the release must be added here too. The use of Gitmoji is encouraged.
+Release notes detailing everything included in the release must be added here too. The use of Gitmoji[3] is encouraged.
 
-## Hotfixes
+## Hot fixes
 
 Once a production issue has been reported it should be replicated on both the production and staging environments. The reason for additional replication on the staging environment is to confirm any changes waiting to go to production have not already fixed the issue.
 
@@ -46,7 +46,7 @@ The process is identical to the usual development flow outlined above with the `
 
 Once the fix has been merged it can be release in isolation.
 
-1. Create a `hotfix` branh from the tag of the last release using the recommended naming convention
+1. Create a `hotfix` branch from the tag of the last release using the recommended naming convention
     - ```bash
       git checkout -b hotfix hotfix/[TICKET-NUMBER]-[SHORT_TICKET_DESCRIPTION] [TAG]
       ```
@@ -92,13 +92,12 @@ These should be cleaned up periodically. It should be up to the team to decide w
 
 It's implicit integration testing.
 
-By making sure the code is up to date and having all of the automations pass it gives us confidence that the addition of the changes will still be a deployable version.
+By making sure the code is up to date and having all of the automated tasks pass it gives us confidence that the addition of the changes will still be a deployable version.
 
 #### Why not release the `main` branch when the hotfix is complete?
 
 ## References
 
-1. Trunk Based Development
-1. A successful Git branching model
-1. Gitflow Workflow
-1. Gitmoji
+1. Trunk Based Development: https://trunkbaseddevelopment.com/
+1. A successful Git branching model: https://nvie.com/posts/a-successful-git-branching-model/
+1. Gitmoji: https://gitmoji.dev/
